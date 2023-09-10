@@ -1,6 +1,9 @@
 import functions
 
 
+# Юрий Солдатов, 8-й поток — Финальный проект. Инженер по тестированию плюс
+
+
 # Тест на проверку получения данных о заказе по трек-номеру с помощью API Яндекс Самокат
 def test_get_order_by_track():
     # Шаги автотеста:
@@ -11,6 +14,3 @@ def test_get_order_by_track():
     order_response = functions.get_order_by_track(order_track)
     # Проверить, что код ответа равен 200.
     assert order_response.status_code == 200
-
-
-
